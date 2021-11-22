@@ -24,3 +24,7 @@ select * from aadress_book;
 
 -- UC6
 select * from aadress_book where city='Mumbai' or state='Maharashtra';
+
+-- UC7
+select count(city) from aadress_book;
+select count(state) from aadress_book;
