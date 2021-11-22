@@ -13,3 +13,7 @@ insert into aadress_book values('Sayali', 'Thakur', 'Chiplun', 'Ratnagiri', 'Mah
 insert into aadress_book values('Virat', 'Kohli', 'Mathura Road', 'Narela', 'Delhi', 110054, 9104458389, 'viratkohli18@gmail.com');
 insert into aadress_book values('Afroj', 'Satwilkar', 'Malad', 'Mumbai', 'Maharashtra', 400078, 9075528330, 'afrozsatwilkar@gmail.com');
 select * from aadress_book;
+
+-- UC4
+update aadress_book set address='Rohit' where first_name='Virat'; 
+select * from aadress_book;
