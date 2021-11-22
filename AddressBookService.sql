@@ -38,3 +38,11 @@ alter table aadress_book add column type varchar(20);
 desc aadress_book;
 update aadress_book set type='friend';
 select * from aadress_book;
+
+-- UC10
+insert into aadress_book values('Sagar', 'Yadav', 'Ram Nagar', 'Mandla', 'MP', 454778, 7104803089, 'sagaryadav@gmail.com','Profession');
+insert into aadress_book values('Mitali', 'Kadam', 'Kothrud', 'Pune', 'Maharashtra', 515722, 8706593785, 'mitalikadam0@gmail.com','Profession');
+insert into aadress_book values('Raj', 'Vilankar', 'Khed', 'Ratnagiri', 'Maharashtra', 410054, 8475458389, 'rjvilan@gmail.com','Family');
+insert into aadress_book values('Darshana', 'More', 'Ganesh Nagar', 'Thane', 'Maharashtra', 410754, 9154458587, 'darshumore@gmail.com','Family');
+select * from aadress_book;
+select count(type),type from aadress_book group by type;
