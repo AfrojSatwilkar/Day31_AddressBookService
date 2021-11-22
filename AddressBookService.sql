@@ -21,3 +21,6 @@ select * from aadress_book;
 -- UC5
 delete from aadress_book where first_name='Virat';
 select * from aadress_book;
+
+-- UC6
+select * from aadress_book where city='Mumbai' or state='Maharashtra';
