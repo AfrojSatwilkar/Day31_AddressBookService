@@ -32,3 +32,9 @@ select count(state) from aadress_book;
 -- UC8
 select * from aadress_book group by city order by first_name ASC ;
 select * from aadress_book group by city order by first_name DESC ;
+
+-- UC9
+alter table aadress_book add column type varchar(20);
+desc aadress_book;
+update aadress_book set type='friend';
+select * from aadress_book;
