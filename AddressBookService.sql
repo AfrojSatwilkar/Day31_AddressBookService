@@ -17,3 +17,7 @@ select * from aadress_book;
 -- UC4
 update aadress_book set address='Rohit' where first_name='Virat'; 
 select * from aadress_book;
+
+-- UC5
+delete from aadress_book where first_name='Virat';
+select * from aadress_book;
