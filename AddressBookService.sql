@@ -55,3 +55,32 @@ insert into person1 values(2,'Family');
 insert into person1 values(3,'Family');
 select * from person1;
 select * from  aadress_book inner join person1 on aadress_book.type = person1.Type;
+
+-- UC13
+create table contact(contact_id int not null, contact_type varchar(50), name varchar(50));
+desc contact;
+
+insert into contact values (1, 'Family', 'Tushar');
+insert into contact values (2, 'friend', 'Vinay');
+insert into contact values (3, 'friend', 'Akshay');
+
+select * from contact;
+select * from contact where name='Tushar' or contact_id='1';
+select * from contact where name='Tushar' or contact_id='2';
+
+select count(name) from contact;
+select count(contact_id) from contact;
+
+select * from contact group by name order by contact_id ASC ;
+select * from contact group by name order by contact_type ASC ;
+select * from contact group by name order by contact_id DESC ;
+alter table contact add column gender varchar(20);
+update contact set gender='F' where contact_id=1;
+desc contact;
+
+insert into contact values (4, 'Profession', 'Sayali','F');
+insert into contact values (5, 'Family', 'Sagar','M');
+insert into contact values (6, 'friend', 'Vinaya','F');
+insert into contact values (7, 'friend', 'Roshan','M');
+select * from contact;
+select count(contact_type),contact_type from contact group by contact_type;
