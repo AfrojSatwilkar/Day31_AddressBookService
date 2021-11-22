@@ -46,3 +46,12 @@ insert into aadress_book values('Raj', 'Vilankar', 'Khed', 'Ratnagiri', 'Maharas
 insert into aadress_book values('Darshana', 'More', 'Ganesh Nagar', 'Thane', 'Maharashtra', 410754, 9154458587, 'darshumore@gmail.com','Family');
 select * from aadress_book;
 select count(type),type from aadress_book group by type;
+
+-- UC11
+create table person1(person_id int not null,type varchar(50));
+desc person1;
+insert into person1 values(1,'friend');
+insert into person1 values(2,'Family');
+insert into person1 values(3,'Family');
+select * from person1;
+select * from  aadress_book inner join person1 on aadress_book.type = person1.Type;
